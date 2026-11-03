@@ -13,7 +13,7 @@ El sistema modela las operaciones concurrentes de la taberna universitaria **"El
     * `Suscriptor<T extends Evento>`: Interfaz funcional con el método `onEvent(T evento)`.
     * `EventBus`: Gestiona un mapa concurrente de suscriptores por tipo de evento (`Class<T>`) y provee las operaciones `suscribir`, `desuscribir` y `publicar`.
 
-2. **Eventos Inmutables (`com.golemalquimico.eventos`)**:
+2. **Eventos Inmutables (`eventos`)**:
     * `PedidoRealizadoEvent`: Contiene `mesaId`, `pedidoId` y una lista inmutable de `items`.
     * `BebidaServidaEvent`: Contiene `mesaId` y `bebida`.
     * `ComidaPreparadaEvent`: Contiene `pedidoId` y `plato`.
